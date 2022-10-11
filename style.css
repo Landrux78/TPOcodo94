@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;}
-/* HEADER */
+
+body{
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+    /* HEADER */
 header{
-    height: 100px;
+    height: 100%;
     background: #4d4d5c;
     padding: 0 50px;
     color: #fff;
@@ -120,10 +128,11 @@ h1{
 .boton-leer-mas{
     display: inline-block;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight:600;
     color:#6cc091;
-    padding: 10px 40px;
-    border: 3px solid #6cc091;
+    padding: 10px 30px;
+    border: 2px solid #6cc091;
     border-radius: 30px;
     margin-top: 15px;
     align-self: baseline;
@@ -131,7 +140,7 @@ h1{
 }
 
 .boton-leer-mas:hover{
-    background: #6cc09070;
+    background: #6cc091;
     color: white;
 }
 
@@ -140,11 +149,29 @@ footer{
     background: #4d4d5c;
     color: #cccccc4a;
     text-align: center;
-    padding: 10px 0px;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
+footer p{
+    color: white;
+}
+
+.redsoc{
+    color: white;
+    font-size: 1.8vw;
+    padding: 20px;
+}
+.redsoc:hover{
+    color: #6cc091;
+    transition: 0.4s;
+}
+
+
 /* RESPONSIVE */
-@media (max-width:576px){
+@media (max-width:768px){
     .mostrar-menu,
     .esconder-menu{
         display: block;
@@ -180,7 +207,31 @@ footer{
 
     /* INFO */
     .info{
+        width: 100%;
         flex-direction: column;
     }
+
+    .redsoc{
+        color: white;
+        font-size: 1.8vw;
+        padding: 20px;
+    }    
 }
 
+@media (max-width:390px){
+    .logo{
+        display: none;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .info{
+        background: red;
+    }
+
+    img{
+        width: 100%;
+    }
+}
