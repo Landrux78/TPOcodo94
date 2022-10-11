@@ -135,7 +135,13 @@ h1{
     color: white;
 }
 
-
+/* FOOTER */
+footer{
+    background: #4d4d5c;
+    color: #cccccc4a;
+    text-align: center;
+    padding: 10px 0px;
+}
 
 /* RESPONSIVE */
 @media (max-width:576px){
