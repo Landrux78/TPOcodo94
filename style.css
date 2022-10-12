@@ -147,14 +147,22 @@ h1{
 /* MARCAS */
 
 .marcas{
-    padding: 0px 50px;
+    padding: 30px 0px;
+}
+.marcas img{
+    width: 150px;
 }
 
 .contenido-marcas{
-    padding: 50px 50px 0px 50px;
-    display: flex;
-    justify-content: space-between;
-    
+    padding: 20px 50px 10px 10px;
+    display:grid;
+    /*justify-content:space-around;
+    margin-bottom: 30px;*/
+}
+
+.contenido-marcas div{
+    flex: 1;
+    padding-left: 50px;
 }
 
 /* FOOTER */
@@ -235,15 +243,26 @@ footer p{
         display: none;
     }
 
+    h3 span{
+        color: red;
+        font-size: 20px;
+
+        
+    }
+
     h1{
         font-size: 25px;
     }
 
-    .info{
-        background: red;
-    }
-
     img{
         width: 100%;
+    }
+    .redes .redsoc{
+        font-size: 15px;
+    }
+
+    .contenido-marcas{
+        flex-direction: column;
+        padding-bottom: 30px;
     }
 }
