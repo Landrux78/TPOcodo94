@@ -28,10 +28,9 @@ header{
 }
 
 h1{
-    width: 200px;
     color: #6cc091;
     font-weight: 500;
-    padding-right: 30%;
+    padding-right: 100px;
 }
 
 .menu a{
@@ -84,7 +83,7 @@ h1{
     left: 0;
 }
 
-.contenido-banner{
+.contenido-banner, .contenido-banner2{
     position: relative;
     color: #fff;
     width: 100%;
@@ -146,23 +145,18 @@ h1{
 
 /* MARCAS */
 
-.marcas{
-    padding: 30px 0px;
-}
 .marcas img{
-    width: 150px;
+    width: 180px;
 }
 
 .contenido-marcas{
-    padding: 20px 50px 10px 10px;
-    display:grid;
-    /*justify-content:space-around;
-    margin-bottom: 30px;*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content:space-around;
 }
 
 .contenido-marcas div{
-    flex: 1;
-    padding-left: 50px;
+    margin: 50px 0px;
 }
 
 /* FOOTER */
@@ -174,27 +168,79 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 90px;
 }
 
 footer p{
     color: white;
+    text-align: center;
+    padding: 10px 0px;
+
 }
 
 .redsoc{
     color: white;
-    font-size: 1.8vw;
-    padding: 20px;
+    font-size: 1.9vw;
+    padding: 20px 15px;
 }
+
 .redsoc:hover{
     color: #6cc091;
     transition: 0.4s;
 }
 
+/* PAG. KAYAK */
+
+.banner2{
+    padding: 0 50px;
+    background-image: url(./asset/modkayak2.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner2::before{
+    content: "";
+    background: rgba(77, 77, 92, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+
+.contenido-banner2 H2{
+    color: #fff;
+    font-weight: 500;
+    padding-top: 150px;
+}
+
 /* RESPONSIVE */
 @media (max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     .mostrar-menu,
     .esconder-menu{
         display: block;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+
+    .contenido-marcas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenido-marcas img{
+        padding: 30px 0px;
     }
 
     .menu{
@@ -235,19 +281,22 @@ footer p{
         color: white;
         font-size: 1.8vw;
         padding: 20px;
-    }    
+    }
+
+    .redes .redsoc{
+        font-size: 15px;
+    }
 }
 
 @media (max-width:390px){
+
     .logo{
         display: none;
     }
 
     h3 span{
-        color: red;
         font-size: 20px;
 
-        
     }
 
     h1{
@@ -257,6 +306,11 @@ footer p{
     img{
         width: 100%;
     }
+
+    .contenido-marcas img{
+        padding: 10px 0px;
+    }
+
     .redes .redsoc{
         font-size: 15px;
     }
@@ -264,5 +318,9 @@ footer p{
     .contenido-marcas{
         flex-direction: column;
         padding-bottom: 30px;
+    }
+
+    .contenido-banner2 h2{
+        display: none;
     }
 }
