@@ -103,7 +103,6 @@ h1{
 .info{
     padding: 50px 50px;
     display: flex;
-    justify-content: center;
     justify-content: space-around;
     text-align: center;
 }
@@ -147,14 +146,14 @@ h1{
 /* MARCAS */
 
 .marcas img{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     transition: width 0.8s, height 0.8s;
 }
 
 .marcas img:hover {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
   }
 
 .contenido-marcas{
@@ -183,7 +182,6 @@ footer p{
     color: white;
     text-align: center;
     padding: 10px 0px;
-
 }
 
 .redsoc{
@@ -225,32 +223,61 @@ footer p{
 .kayak{
     padding: 50px 50px;
     display: flex;
-    justify-content: center;
     justify-content: space-around;
     text-align: center;
 }
 
-.boton-ver-mas{
+.kayak h4{
+    margin:  0 45px 0 0 ;
+}
+
+.kayak .ver-mas{
+    
     display: inline-block;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     font-weight:600;
     color:#6cc091;
     padding: 10px 30px;
-    border: 2px solid #6cc091;
-    border-radius: 30px;
     margin-top: 15px;
-    align-self: baseline;
     transition: 0.4s;
 }
 
-.boton-ver-mas:hover{
-    background: #6cc091;
-    color: white;
+.ver-mas:hover{
+    color: #234231;
 }
 
 .kayak img{
     width: 200px;
+}
+
+.cont-rocker,
+.cont-sit,
+.cont-atlanti{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* IMG */
+.descrip-one{
+    padding: 20px 10px;
+    padding-bottom: 50px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.descrip-one img{
+    width: 700px;
+    display: flex;
+    flex-direction:column;
+}
+
+.btn-volver {
+    margin: 0 0 60px 0;
+    display: flex;
+    justify-content: center;
+    
 }
 
 /* RESPONSIVE */
@@ -322,6 +349,12 @@ footer p{
         padding: 10px 0px;
     }
 
+    .marcas img:hover{
+        width: 180px;
+        height: 180px;
+        transition: 0.8s;
+    }
+
     .redsoc{
         color: white;
         font-size: 1.8vw;
@@ -333,6 +366,7 @@ footer p{
     }
 }
 
+/* RESPONSIVE CELULAR */
 @media (max-width:390px){
 
     .logo{
@@ -354,6 +388,14 @@ footer p{
 
     .contenido-marcas img{
         padding: 10px 0px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .contenido-marcas img:hover{
+        width: 120px;
+        height: 120px;
+        transition: 0.4s;
     }
 
     .redes .redsoc{
