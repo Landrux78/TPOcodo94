@@ -260,17 +260,23 @@ footer p{
 
 
 /* IMG */
-.descrip-one{
+.descrip-rocker{
     padding: 20px 10px;
-    padding-bottom: 50px;    
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.descrip-one img{
+.descrip-rocker img{
     width: 700px;
     display: flex;
     flex-direction:column;
+}
+
+h2{
+    text-align: center;
+    font-weight: 800;
+    color: #6cc091;
 }
 
 .btn-volver {
